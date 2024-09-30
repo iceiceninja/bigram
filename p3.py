@@ -66,7 +66,7 @@ def cosine_similarity(word1, word2, glove_vectors):
 
     vec1 = glove_vectors[word1]
     vec2 = glove_vectors[word2]
-    similarity = dot(vec1, vec2) / (norm(vec1) * norm(vec2))
+    similarity = dot(vec1,vec2)/(norm(vec1)*norm(vec2))
     return similarity
 
 
@@ -95,17 +95,17 @@ def find_most_similar(word, glove_vectors, top_n=5):
     if word not in glove_vectors:
         return None
 
-    target_vector = glove_vectors[word]
+    targetVector = glove_vectors[word]
     similarities = {}
 
-    for other_word, vector in glove_vectors.items():
-        if other_word == word:
+    for currWord, vector in glove_vectors.items():
+        if currWord == word:
             continue
-        similarity = dot(target_vector, vector) / (norm(target_vector) * norm(vector))
-        similarities[other_word] = similarity
+        similarity = dot(targetVector,vector)/(norm(targetVector)*norm(vector))
+        similarities[currWord] = similarity
 
     # Sort the words by similarity in descending order
-    sorted_similar_words = sorted(similarities.items(), key=lambda item: item[1], reverse=True)
+    sorted_similar_words = sorted(similarities.items(),key=lambda item: item[1],reverse=True)
     return sorted_similar_words[:top_n]
 
 

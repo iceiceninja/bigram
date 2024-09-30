@@ -180,7 +180,7 @@ def compute_ppmi(cooccurrence_matrix):
     for i in range(cooccurrence_matrix.shape[0]):
         for j in range(cooccurrence_matrix.shape[1]):
             if cooccurrence_matrix[i, j] > 0:
-                p_ij = cooccurrence_matrix[i, j] / total_sum
+                p_ij = cooccurrence_matrix[i, j] / total_sum # Normally I dont use underscores in names but with these it symbolizes a subscript
                 p_i = sum_over_rows[i] / total_sum
                 p_j = sum_over_columns[j] / total_sum
                 ppmi = max(math.log(p_ij / (p_i * p_j)), 0)  # PMI calculation
