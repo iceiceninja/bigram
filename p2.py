@@ -241,17 +241,17 @@ if __name__ == "__main__":
 Answer the following questions based on the outputs of you program:
 
 TF-IDF for word 'county' the first document:  
-[YOUR ANSWER]
+3.4420193761824107
 TF-IDF for word 'investigation' the first document:  
-[YOUR ANSWER]
+4.8283137373023015
 TF-IDF for word 'produced' the first doccountyument: 
-[YOUR ANSWER]
+6.214608098422191
 
 PPMI for a few word pairs:
 PPMI(expected, approve) = 
-[YOUR ANSWER]
+4.959675055498629
 PPMI(mentally, in) = 
-[YOUR ANSWER]
+2.5704478519976655
 PPMI(send, bed) = 
-[YOUR ANSWER]
+0.0
 """

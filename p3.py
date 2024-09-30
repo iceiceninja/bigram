@@ -140,16 +140,30 @@ if __name__ == "__main__":
 Answer the following questions based on the outputs of you program:
 
 cosine similarity between 'cat' and 'dog': 
-[YOUR ANSWER]
+0.9218
 cosine similarity between 'car' and 'bus': 
-[YOUR ANSWER]
+0.8211
 cosine similarity between 'apple' and 'banana': 
-[YOUR ANSWER]
+0.5608
 
 top 5 most similar words to 'king':
-[YOUR ANSWER]
+prince: 0.8236
+queen: 0.7839
+ii: 0.7746
+emperor: 0.7736
+son: 0.7667
+
 top 5 most similar words to 'computer':
-[YOUR ANSWER]
+computers: 0.9165
+software: 0.8815
+technology: 0.8526
+electronic: 0.8126
+internet: 0.8060
+
 top 5 most similar words to 'university':
-[YOUR ANSWER]
+college: 0.8745
+harvard: 0.8711
+yale: 0.8567
+graduate: 0.8553
+institute: 0.8484
 """
